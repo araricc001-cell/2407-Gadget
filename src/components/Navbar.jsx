@@ -5,6 +5,7 @@ import { whatsappLink } from "../data/brand";
 
 const NAV_LINKS = [
   { to: "/products", label: "Products" },
+  { to: "/brands", label: "Brands" },
   { to: "/swap", label: "Swap Deals" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },

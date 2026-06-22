@@ -9,6 +9,8 @@ import SwapPage from "./pages/SwapPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import BrandsPage from "./pages/BrandsPage";
+import BrandPage from "./pages/BrandPage";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
       <Navbar />
       <main className="flex-1">
         <Routes>
+          <Route path="/brands" element={<BrandsPage />} />
+<Route path="/brands/:brandId" element={<BrandPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/swap" element={<SwapPage />} />
